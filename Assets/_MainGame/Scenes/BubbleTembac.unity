@@ -219,7 +219,8 @@ PrefabInstance:
       value: GGJ2025_Humano_Amarillo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 65702495048144492, guid: 8c662a42ede9e8244b6fbde5e02c4c2a, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c662a42ede9e8244b6fbde5e02c4c2a, type: 3}
