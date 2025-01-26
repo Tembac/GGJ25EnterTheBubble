@@ -50,6 +50,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_MainGame/Scenes/Bubble 14.unity
     guid: 25d2bd561d26d424eb236e6fd6dc61ee
+  - enabled: 1
+    path: Assets/_MainGame/Scenes/FinalScene.unity
+    guid: 01e36f842a14d4d4cad4e484a8d45c60
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}
