@@ -5,12 +5,10 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class ConceptController : MonoBehaviour
 {
-    //TODO: Cuando agarras el objeto aparece el concept escrito arriba.
-    //TODO: El concept podes metertelo en el pecho para que quede ahí.
-
     [SerializeReference] GameObject conceptText;
     [SerializeReference] Transform visualElement;
     [SerializeReference] XRGrabInteractable interactable;
+    [SerializeReference] AudioSource audAddToChest;
 
     Rigidbody body;
 
@@ -22,6 +20,16 @@ public class ConceptController : MonoBehaviour
     {
         conceptText.SetActive(false);
         body = GetComponent<Rigidbody>();
+
+        XRElementsController.instance.insertedToChest += DisableWhenOtherIsInsertedTochest;
+    }
+
+    void DisableWhenOtherIsInsertedTochest()
+    {
+        if(!isInsideChest)
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 
     public void GrabbingConcept()
@@ -63,5 +71,8 @@ public class ConceptController : MonoBehaviour
         body.velocity = Vector3.zero;
         body.isKinematic = true;
         conceptText.SetActive(false);
+        audAddToChest.Play();
+
+        XRElementsController.instance.ObjectInsertedToChest();
     }
 }
