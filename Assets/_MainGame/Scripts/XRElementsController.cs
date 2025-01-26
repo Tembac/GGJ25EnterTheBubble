@@ -28,6 +28,9 @@ public class XRElementsController : MonoBehaviour
 
     [SerializeReference] BubbleController _finalBubbleController;
 
+    [SerializeReference] Transform chest;
+    [SerializeReference] Joint chestJoint;
+
     [SerializeField] Vector3 outerCenterPosition;
     [SerializeField] float outerRadius = 10f;
     [SerializeField] float innerRadius = 5f;
@@ -47,13 +50,18 @@ public class XRElementsController : MonoBehaviour
 
     void SceneLoad(Scene _scene, LoadSceneMode _loadMode)
     {
+        _audioEnterBubble.Play();
+
         if(_scene.name != "InitialScene")
         {
             passtrough.enabled = false;
             _mainCamera.clearFlags = CameraClearFlags.Skybox;
         }
 
-        _audioEnterBubble.Play();
+        if(_scene.name != "FinalScene")
+        {
+            Destroy(chestJoint);
+        }
     }
 
     public void ObjectInsertedToChest()
@@ -69,19 +77,29 @@ public class XRElementsController : MonoBehaviour
             BubbleController finalBubble = Instantiate(_finalBubbleController);
             finalBubble.transform.position = CalculateRandomPoint();
         }
-
-        for(int i = 0; i < 3; i++)
+        else
         {
-            BubbleController bubble = Instantiate(_bubblesArray[lastSpawnedIndex]);
-            bubble.transform.position = CalculateRandomPoint();
-            if(lastSpawnedIndex < _bubblesArray.Length)
+            for(int i = 0; i < 3; i++)
             {
-                lastSpawnedIndex++;
+                if(lastSpawnedIndex < _bubblesArray.Length)
+                {
+                    BubbleController bubble = Instantiate(_bubblesArray[lastSpawnedIndex]);
+                    bubble.transform.position = CalculateRandomPoint();
+                    lastSpawnedIndex++;
+                }
+                else
+                {
+                    // Break early if we've reached the end of the array
+                    noMoreBubbles = true;
+                    break;
+                }
             }
-            else
-            {
-                noMoreBubbles = true;
-            }
+        }
+
+        // Ensure noMoreBubbles is updated after the loop
+        if(lastSpawnedIndex >= _bubblesArray.Length)
+        {
+            noMoreBubbles = true;
         }
     }
 
