@@ -635,6 +635,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Concept (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6535288779723366772, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
+      propertyPath: m_text
+      value: Nos debemos ser leales a unx mismx
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535288779723366772, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
+      propertyPath: m_fontSize
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8474688522140303010, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.5069918
@@ -706,6 +714,14 @@ PrefabInstance:
     - target: {fileID: 1536082172163337700, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
       propertyPath: m_Name
       value: Concept (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535288779723366772, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
+      propertyPath: m_text
+      value: La soberbia lleva a la crueldad
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535288779723366772, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
+      propertyPath: m_fontSize
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8474688522140303010, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
       propertyPath: m_LocalPosition.x
@@ -950,6 +966,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Concept (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6535288779723366772, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
+      propertyPath: m_text
+      value: "Tengo que terminar lo que empec\xE9 (la facultad aaaa)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535288779723366772, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
+      propertyPath: m_fontSize
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 8474688522140303010, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.58550376
@@ -1082,6 +1106,14 @@ PrefabInstance:
     - target: {fileID: 1536082172163337700, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
       propertyPath: m_Name
       value: Concept (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535288779723366772, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
+      propertyPath: m_text
+      value: "Saber que querer, o saber qu\xE9 buscar. Ojal\xE1 poder"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535288779723366772, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
+      propertyPath: m_fontSize
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 8474688522140303010, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
       propertyPath: m_LocalPosition.x

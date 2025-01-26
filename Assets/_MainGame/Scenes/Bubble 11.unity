@@ -280,6 +280,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Concept (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6535288779723366772, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
+      propertyPath: m_text
+      value: "La felicidad son los sanguchitos y el caf\xE9 que tomas con la abuela"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535288779723366772, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
+      propertyPath: m_fontSize
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 8474688522140303010, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.31793743
@@ -666,6 +674,14 @@ PrefabInstance:
     - target: {fileID: 1536082172163337700, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
       propertyPath: m_Name
       value: Concept (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535288779723366772, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
+      propertyPath: m_text
+      value: "Nunca me promet\xED nada a mi mismo"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535288779723366772, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
+      propertyPath: m_fontSize
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8474688522140303010, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1436,6 +1452,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Concept (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6535288779723366772, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
+      propertyPath: m_text
+      value: "Con \u201Cser\u201D alcanza y sobra"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535288779723366772, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
+      propertyPath: m_fontSize
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8474688522140303010, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.5069918
@@ -1507,6 +1531,14 @@ PrefabInstance:
     - target: {fileID: 1536082172163337700, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
       propertyPath: m_Name
       value: Concept (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535288779723366772, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
+      propertyPath: m_text
+      value: "No deb\xED desaprovechar esa oportunidad"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535288779723366772, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
+      propertyPath: m_fontSize
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 8474688522140303010, guid: 484a1c8058194b346a930ed9dcc2d184, type: 3}
       propertyPath: m_LocalPosition.x
