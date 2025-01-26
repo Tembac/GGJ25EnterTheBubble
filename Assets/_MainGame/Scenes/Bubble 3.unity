@@ -422,6 +422,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GGJ2025_Humano_Amarillo
       objectReference: {fileID: 0}
+    - target: {fileID: 7407226144400456688, guid: 8c662a42ede9e8244b6fbde5e02c4c2a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -4125471728267972529, guid: 41b596e40779bd84aaca7d2f1cec8db7, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 8c662a42ede9e8244b6fbde5e02c4c2a, type: 3}
