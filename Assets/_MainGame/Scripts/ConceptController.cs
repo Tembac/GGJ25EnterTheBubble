@@ -13,6 +13,7 @@ public class ConceptController : MonoBehaviour
     Rigidbody body;
 
     bool isInsideChest = false;
+    bool isInsertedInchest = false;
 
     Transform chest;
 
@@ -28,12 +29,15 @@ public class ConceptController : MonoBehaviour
 
     void DisableWhenOtherIsInsertedTochest()
     {
-        if(!isInsideChest)
+        if(!isInsertedInchest)
         {
             this.gameObject.SetActive(false);
         }
     }
-
+    private void OnDestroy()
+    {
+        XRElementsController.instance.insertedToChest -= DisableWhenOtherIsInsertedTochest;
+    }
     public void GrabbingConcept()
     {
         conceptText.SetActive(true);
@@ -68,12 +72,14 @@ public class ConceptController : MonoBehaviour
     void insertIntoChest()
     {
         this.transform.parent = chest;
-        visualElement.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+        visualElement.localScale *= .5f;
         interactable.enabled = false;
         body.velocity = Vector3.zero;
         body.isKinematic = true;
         conceptText.SetActive(false);
         audAddToChest.Play();
+
+        isInsertedInchest = true;
 
         XRElementsController.instance.ObjectInsertedToChest();
     }

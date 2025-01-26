@@ -26,6 +26,8 @@ public class XRElementsController : MonoBehaviour
 
     [SerializeReference] BubbleController[] _bubblesArray;
 
+    [SerializeReference] BubbleController _finalBubbleController;
+
     [SerializeField] Vector3 outerCenterPosition;
     [SerializeField] float outerRadius = 10f;
     [SerializeField] float innerRadius = 5f;
@@ -62,6 +64,12 @@ public class XRElementsController : MonoBehaviour
 
     void SpawnBubbles()
     {
+        if(noMoreBubbles)
+        {
+            BubbleController finalBubble = Instantiate(_finalBubbleController);
+            finalBubble.transform.position = CalculateRandomPoint();
+        }
+
         for(int i = 0; i < 3; i++)
         {
             BubbleController bubble = Instantiate(_bubblesArray[lastSpawnedIndex]);
