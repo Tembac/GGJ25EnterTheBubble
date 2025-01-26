@@ -22,6 +22,7 @@ public class XRElementsController : MonoBehaviour
 
     [SerializeReference] ARCameraManager passtrough;
     [SerializeReference] Camera _mainCamera;
+    [SerializeReference] AudioSource _audioEnterBubble;
 
     [SerializeReference] BubbleController[] _bubblesArray;
 
@@ -29,9 +30,11 @@ public class XRElementsController : MonoBehaviour
     [SerializeField] float outerRadius = 10f;
     [SerializeField] float innerRadius = 5f;
 
+    public event Action insertedToChest;
+
     int lastSpawnedIndex = 0;
 
-    public event Action insertedToChest;
+    bool noMoreBubbles = false;
 
     private void Awake()
     {
@@ -42,12 +45,13 @@ public class XRElementsController : MonoBehaviour
 
     void SceneLoad(Scene _scene, LoadSceneMode _loadMode)
     {
-        if(_scene.name != "InitialScene"
-        || _scene.name != "TutorialScene")
+        if(_scene.name != "InitialScene")
         {
             passtrough.enabled = false;
             _mainCamera.clearFlags = CameraClearFlags.Skybox;
         }
+
+        _audioEnterBubble.Play();
     }
 
     public void ObjectInsertedToChest()
@@ -62,7 +66,14 @@ public class XRElementsController : MonoBehaviour
         {
             BubbleController bubble = Instantiate(_bubblesArray[lastSpawnedIndex]);
             bubble.transform.position = CalculateRandomPoint();
-            lastSpawnedIndex++;
+            if(lastSpawnedIndex < _bubblesArray.Length)
+            {
+                lastSpawnedIndex++;
+            }
+            else
+            {
+                noMoreBubbles = true;
+            }
         }
     }
 

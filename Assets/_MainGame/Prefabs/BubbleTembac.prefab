@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 4343439475627536749}
   - component: {fileID: 3556922656003572298}
   m_Layer: 0
-  m_Name: Bubble
+  m_Name: BubbleTembac
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
