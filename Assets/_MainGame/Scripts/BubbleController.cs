@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Tutorials.Core.Editor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,7 +11,7 @@ public class BubbleController : MonoBehaviour
     {
         if(other.gameObject.tag == "PlayerHead")
         {
-            if(!nextScene.IsNullOrEmpty())
+            if(nextScene != "")
             {
                 SceneManager.LoadScene(nextScene);
             }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Anchor
   - PlayerHead
+  - PlayerChest
   layers:
   - Default
   - TransparentFX
