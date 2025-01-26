@@ -22,6 +22,8 @@ public class ConceptController : MonoBehaviour
         body = GetComponent<Rigidbody>();
 
         XRElementsController.instance.insertedToChest += DisableWhenOtherIsInsertedTochest;
+
+        body.AddForce(new Vector3(1.0f, 1.0f, 1.0f), ForceMode.Impulse);
     }
 
     void DisableWhenOtherIsInsertedTochest()
