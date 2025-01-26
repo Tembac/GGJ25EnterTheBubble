@@ -62,7 +62,7 @@ public class XRElementsController : MonoBehaviour
 
     void SpawnBubbles()
     {
-        for(int i = 0; i < 1; i++)
+        for(int i = 0; i < 3; i++)
         {
             BubbleController bubble = Instantiate(_bubblesArray[lastSpawnedIndex]);
             bubble.transform.position = CalculateRandomPoint();

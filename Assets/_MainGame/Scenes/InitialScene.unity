@@ -280,8 +280,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Incorpora un pensamiento.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1f20ab6e3932c2c48a96f97a90dcbc71, type: 2}
+  m_sharedMaterial: {fileID: 692882826600354536, guid: 1f20ab6e3932c2c48a96f97a90dcbc71, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 2.65
+  m_fontSize: 3.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -370,7 +370,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 692882826600354536, guid: 1f20ab6e3932c2c48a96f97a90dcbc71, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -530,21 +530,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 157814894436832956, guid: 0f4a864a87eff1d459aba4d25621ef83, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 157814894436832956, guid: 0f4a864a87eff1d459aba4d25621ef83, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1408687042561833884, guid: 0f4a864a87eff1d459aba4d25621ef83, type: 3}
       propertyPath: m_Name
       value: XRElements
       objectReference: {fileID: 0}
     - target: {fileID: 1853360982995107117, guid: 0f4a864a87eff1d459aba4d25621ef83, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.73700005
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1853360982995107117, guid: 0f4a864a87eff1d459aba4d25621ef83, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5839999
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1853360982995107117, guid: 0f4a864a87eff1d459aba4d25621ef83, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.433
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1853360982995107117, guid: 0f4a864a87eff1d459aba4d25621ef83, type: 3}
       propertyPath: m_LocalRotation.w
@@ -574,17 +582,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1942785545964657593, guid: 0f4a864a87eff1d459aba4d25621ef83, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1942785545964657593, guid: 0f4a864a87eff1d459aba4d25621ef83, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1942785545964657593, guid: 0f4a864a87eff1d459aba4d25621ef83, type: 3}
+    - target: {fileID: 1888194064404469715, guid: 0f4a864a87eff1d459aba4d25621ef83, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 3498688094825154981, guid: 0f4a864a87eff1d459aba4d25621ef83, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3498688094825154981, guid: 0f4a864a87eff1d459aba4d25621ef83, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411566319429824668, guid: 0f4a864a87eff1d459aba4d25621ef83, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411566319429824668, guid: 0f4a864a87eff1d459aba4d25621ef83, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.011
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411566319429824668, guid: 0f4a864a87eff1d459aba4d25621ef83, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 6579282413398975170, guid: 0f4a864a87eff1d459aba4d25621ef83, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6579282413398975170, guid: 0f4a864a87eff1d459aba4d25621ef83, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.987
+      objectReference: {fileID: 0}
+    - target: {fileID: 6579282413398975170, guid: 0f4a864a87eff1d459aba4d25621ef83, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946214213719376879, guid: 0f4a864a87eff1d459aba4d25621ef83, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946214213719376879, guid: 0f4a864a87eff1d459aba4d25621ef83, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
