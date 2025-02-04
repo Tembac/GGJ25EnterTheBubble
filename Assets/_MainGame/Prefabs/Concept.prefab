@@ -238,7 +238,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 9194790992290419626}
         m_TargetAssemblyTypeName: ConceptController, Assembly-CSharp
-        m_MethodName: GrabbingConcept
+        m_MethodName: GrabConcept
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

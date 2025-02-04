@@ -36,11 +36,33 @@ public class ConceptController : MonoBehaviour
     }
     private void OnDestroy()
     {
-        XRElementsController.instance.insertedToChest -= DisableWhenOtherIsInsertedTochest;
+        if(XRElementsController.instance != null) 
+        {
+            XRElementsController.instance.insertedToChest -= DisableWhenOtherIsInsertedTochest;
+        }
     }
-    public void GrabbingConcept()
+
+    public void GrabConcept()
+    {
+        ActivateText();
+    }
+
+    public void ActivateText()
     {
         conceptText.SetActive(true);
+
+        conceptText.transform.LookAt(Camera.main.transform.position, Vector3.up);
+        conceptText.transform.Rotate(0, 180, 0);
+    }
+
+    public void EndingAction()
+    {
+        ActivateText();
+        interactable.enabled = true;
+        body.isKinematic = false;
+        isInsideChest = false;
+        this.transform.parent = null;
+        body.AddForce(new Vector3(0.1f, 0.1f, 0.1f), ForceMode.Impulse);
     }
 
     public void ReleasingConcept()
@@ -81,6 +103,6 @@ public class ConceptController : MonoBehaviour
 
         isInsertedInchest = true;
 
-        XRElementsController.instance.ObjectInsertedToChest();
+        XRElementsController.instance.ObjectInsertedToChest(this);
     }
 }

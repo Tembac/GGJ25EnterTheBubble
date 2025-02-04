@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using UnityEngine.XR.ARFoundation;
+using DG.Tweening;
 
 public class XRElementsController : MonoBehaviour
 {
@@ -28,6 +29,11 @@ public class XRElementsController : MonoBehaviour
 
     [SerializeReference] BubbleController _finalBubbleController;
 
+    [SerializeReference] AudioSource music01AS;
+    [SerializeReference] AudioSource music02AS;
+    [SerializeReference] AudioSource music03AS;
+
+    [SerializeField] Vector3 chestFinalPosition;
     [SerializeReference] Transform chest;
     [SerializeReference] Joint chestJoint;
 
@@ -41,6 +47,8 @@ public class XRElementsController : MonoBehaviour
 
     bool noMoreBubbles = false;
 
+    List<ConceptController> conceptsInChest = new List<ConceptController>();
+
     private void Awake()
     {
         DontDestroyOnLoad(this);
@@ -52,22 +60,52 @@ public class XRElementsController : MonoBehaviour
     {
         _audioEnterBubble.Play();
 
-        if(_scene.name != "InitialScene")
+        if(_scene.name == "InitialScene"
+        || _scene.name == "FinalScene")
+        {
+            passtrough.enabled = true;
+            _mainCamera.clearFlags = CameraClearFlags.Color;
+
+            if(!music01AS.isPlaying)
+            {
+                music01AS.Stop();
+                music02AS.Stop();
+                music03AS.Stop();
+            }
+        }
+        else 
         {
             passtrough.enabled = false;
             _mainCamera.clearFlags = CameraClearFlags.Skybox;
+
+            if(!music01AS.isPlaying) { music01AS.Play(); }
+            if(!music02AS.isPlaying) { music02AS.Play(); }
+            if(!music03AS.isPlaying) { music03AS.Play(); }
         }
 
-        if(_scene.name != "FinalScene")
+        if(_scene.name == "FinalScene")
         {
             Destroy(chestJoint);
+            //chest.position = chestFinalPosition;
+            chest.GetComponent<Rigidbody>().isKinematic = true;
+            chest.DOMove(chestFinalPosition, 5.0f).SetEase(Ease.InExpo)
+                .OnComplete(()=> {
+                    foreach(ConceptController c in conceptsInChest)
+                    {
+                        c.EndingAction();
+                    }
+
+                    Destroy(chest.gameObject);
+                });
+  
         }
     }
 
-    public void ObjectInsertedToChest()
+    public void ObjectInsertedToChest(ConceptController concept)
     {
         SpawnBubbles();
         insertedToChest.Invoke();
+        conceptsInChest.Add(concept);
     }
 
     void SpawnBubbles()
@@ -128,8 +166,12 @@ public class XRElementsController : MonoBehaviour
         Gizmos.DrawWireSphere(outerCenterPosition, outerRadius);
 
         // Draw the inner sphere
-        Gizmos.color = Color.red;
+        Gizmos.color = Color.white;
         Gizmos.DrawWireSphere(outerCenterPosition, innerRadius);
+
+        //final chest position
+        Gizmos.color = Color.red;
+        Gizmos.DrawSphere(chestFinalPosition, 0.1f);
     }
 
 }
