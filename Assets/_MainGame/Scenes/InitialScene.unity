@@ -729,7 +729,7 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_renderer: {fileID: 1927213580}
   m_maskType: 0
 --- !u!23 &1927213580
@@ -752,7 +752,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 692882826600354536, guid: 1f20ab6e3932c2c48a96f97a90dcbc71, type: 2}
+  - {fileID: 286709125587976822, guid: 1f20ab6e3932c2c48a96f97a90dcbc71, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

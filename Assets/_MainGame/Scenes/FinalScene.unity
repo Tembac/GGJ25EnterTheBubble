@@ -280,10 +280,11 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u201CEnter the Bubble VR\u201D\nTembac - Programaci\xF3n\nJavi - Arte
     3D\nBorza - Design\nTozy - M\xFAsica\nMixkit & DK - Sonidos\n\nHecho en el sitio
-    Exof, para la Globlal Game Jam 2025\n\xA1Gracias por conectar!"
+    Exof, para la Globlal Game Jam 2025\n\xA1Gracias por conectar!\n\nDeja presionado
+    el bot\xF3n\n\"A\"\n para volver a comenzar"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 49488514c5af52447867480cf0c1a6db, type: 2}
-  m_sharedMaterial: {fileID: 247749473863067062, guid: 49488514c5af52447867480cf0c1a6db, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1f20ab6e3932c2c48a96f97a90dcbc71, type: 2}
+  m_sharedMaterial: {fileID: 286709125587976822, guid: 1f20ab6e3932c2c48a96f97a90dcbc71, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -307,7 +308,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1.3
+  m_fontSize: 0.9
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -372,7 +373,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 247749473863067062, guid: 49488514c5af52447867480cf0c1a6db, type: 2}
+  - {fileID: 286709125587976822, guid: 1f20ab6e3932c2c48a96f97a90dcbc71, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

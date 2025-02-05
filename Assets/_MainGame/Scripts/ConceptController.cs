@@ -62,7 +62,7 @@ public class ConceptController : MonoBehaviour
         body.isKinematic = false;
         isInsideChest = false;
         this.transform.parent = null;
-        body.AddForce(new Vector3(0.1f, 0.1f, 0.1f), ForceMode.Impulse);
+        //body.AddForce(new Vector3(0.1f, 0.1f, 0.1f), ForceMode.Impulse);
     }
 
     public void ReleasingConcept()

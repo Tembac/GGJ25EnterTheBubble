@@ -714,7 +714,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 247749473863067062, guid: 49488514c5af52447867480cf0c1a6db, type: 2}
+  - {fileID: 286709125587976822, guid: 1f20ab6e3932c2c48a96f97a90dcbc71, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -756,10 +756,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Concepto interesante
+  m_text: "Concepto interesante \xE1\xE9\xED\xF3\xFA\xD1\xF1"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 49488514c5af52447867480cf0c1a6db, type: 2}
-  m_sharedMaterial: {fileID: 247749473863067062, guid: 49488514c5af52447867480cf0c1a6db, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1f20ab6e3932c2c48a96f97a90dcbc71, type: 2}
+  m_sharedMaterial: {fileID: 286709125587976822, guid: 1f20ab6e3932c2c48a96f97a90dcbc71, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -783,7 +783,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.95
+  m_fontSize: 0.6
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
