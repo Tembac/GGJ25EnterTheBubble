@@ -1,15 +1,22 @@
 https://borza.itch.io/enter-the-bubble-vr
 
-“Enter the Bubble VR”
+Juego de exploración expresiva en VR, donde el jugador entrará en mundos ajenos para recolectar identidades de otras personas, sumándolas a su propia burbuja mental.
+
+Hecho en el sitio Exof, para la Globlal Game Jam 2025. Tema: Burbuja.
+
+Hecho por:
 Tembac - Programación
 Javi - Arte 3D
 Borza - Design
 Tozy - Música
 Mixkit & DK - Sonidos
 
-Hecho en el sitio Exof, para la Globlal Game Jam 2025
-¡Gracias por conectar!
+Este juego fue creado para ser jugado en META Quest 3.
 
-Deja presionado el botón
-"A"
- para volver a comenzar
+--- 
+
+(Only in spanish)
+
+Expresive exploration VR game, where the player enters worlds of others, collecting other peoples identitys, adding them to your own mind bubble.
+
+Made at Exof jam site, for the Globlal Game Jam 2025. Theme: Bubble.
